@@ -1,1 +1,1 @@
-console.log("It's working");
+(()=>{"use strict";!function(){const t=document.createElement("h1");t.textContent="Welcome to restaurant";const e=document.createElement("p");e.textContent="There are many reasons why this is the best restaurant",document.getElementById("content").append(t,e)}()})();

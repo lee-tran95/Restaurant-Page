@@ -1,12 +1,23 @@
+import '../styles/home.css'
 
 function loadPage(){
-    const header = document.createElement('h1')
-    header.textContent = "Welcome to restaurant"
-    
-    const restaurantDescription = document.createElement('p')
-    restaurantDescription.textContent = "There are many reasons why this is the best restaurant"
+    const header = document.createElement('header')
+    header.classList.add('header')
 
-    document.getElementById('content').append(header, restaurantDescription)
+    const restaurantName = document.createElement('h1')
+    restaurantName.textContent = "SUSHIDON"
+
+    const restaurantDescription = document.createElement('span')
+    restaurantDescription.textContent = "JAPANESE NOODLES & SUSHI"
+
+    const navBar = document.createElement('nav')
+    
+    header.append(restaurantName, restaurantDescription, navBar)
+
+    const restaurantAbout = document.createElement('p')
+    restaurantAbout.textContent = "There are many reasons why this is the best restaurant"
+
+    document.getElementById('content').append(header, restaurantAbout)
 }
 
 export default loadPage

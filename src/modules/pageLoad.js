@@ -13,21 +13,22 @@ function loadPage(){
     const navBar = document.createElement('nav')
 
     const homeButton = document.createElement('button')
+    homeButton.id = "home"
     homeButton.textContent = "Home"
 
     const menuButton = document.createElement('button')
+    menuButton.id = "menu"
     menuButton.textContent = "Menu"
 
     const contactButton = document.createElement('button')
+    contactButton.id = "contact"
     contactButton.textContent = "Contact"
     
     navBar.append(homeButton, menuButton, contactButton)
     header.append(restaurantName, restaurantDescription, navBar)
 
-    const restaurantAbout = document.createElement('p')
-    restaurantAbout.textContent = "There are many reasons why this is the best restaurant"
+    document.getElementById('content').append(header)
 
-    document.getElementById('content').append(header, restaurantAbout)
 }
 
 export default loadPage

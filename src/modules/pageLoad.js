@@ -11,7 +11,17 @@ function loadPage(){
     restaurantDescription.textContent = "JAPANESE NOODLES & SUSHI"
 
     const navBar = document.createElement('nav')
+
+    const homeButton = document.createElement('button')
+    homeButton.textContent = "Home"
+
+    const menuButton = document.createElement('button')
+    menuButton.textContent = "Menu"
+
+    const contactButton = document.createElement('button')
+    contactButton.textContent = "Contact"
     
+    navBar.append(homeButton, menuButton, contactButton)
     header.append(restaurantName, restaurantDescription, navBar)
 
     const restaurantAbout = document.createElement('p')

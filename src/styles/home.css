@@ -1,11 +1,31 @@
+:root{
+    --main-text-color: red;
+    --secondary-text-color: white;
+}
+*{
+    margin: 0;;
+}
+body{
+    overflow: hidden;
+}
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: red;
+    color: var(--main-text-color);
 }
+ h4{
+    color: white;
+ }
+
+ p{
+    color: white;
+ }
+
 .homeContent{
-    height: 100vh;
-    background: url('../assets/Udon.jpg');
+    height: 93vh;
+    background: url('../assets/restaurant.jpg');
+    background-position: center;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }

@@ -7,12 +7,19 @@
 }
 body{
     overflow: hidden;
+    height: 100vh;
+    background: url('../assets/restaurant.jpg');
+    background-position: center;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
 }
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--main-text-color);
+    color: black;
+    background-color: white;
+    opacity: .8;
 }
  h4{
     color: white;
@@ -23,9 +30,9 @@ body{
  }
 
 .homeContent{
-    height: 93vh;
-    background: url('../assets/restaurant.jpg');
-    background-position: center;
-    background-size: cover;
-    image-rendering: -webkit-optimize-contrast;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

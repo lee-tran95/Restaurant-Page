@@ -12,6 +12,8 @@ function loadHome(){
     const orderButton = document.createElement('Button')
     orderButton.textContent = "ORDER NOW"
 
+    
+
     homeDiv.append(restaurantAboutHeader, restaurantAbout, orderButton)
     document.getElementById('content').append(homeDiv)
 }

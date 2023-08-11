@@ -4,3 +4,8 @@
     align-items: center;
     color: red;
 }
+.homeContent{
+    height: 100vh;
+    background: url('../assets/Udon.jpg');
+    background-size: cover;
+}

@@ -1,7 +1,8 @@
 
 function loadHome(){
     const homeDiv = document.createElement('div')
-
+    homeDiv.classList.add('homeContent')
+    
     const restaurantAboutHeader = document.createElement('h4')
     restaurantAboutHeader.textContent = "SUSHIDON IS..."
 

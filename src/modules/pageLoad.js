@@ -1,4 +1,3 @@
-import '../styles/home.css'
 
 function loadPage(){
     const header = document.createElement('header')

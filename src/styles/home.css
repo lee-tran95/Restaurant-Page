@@ -3,14 +3,17 @@
     --secondary-text-color: white;
 }
 *{
-    margin: 0;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    overflow: auto;
     height: 100vh;
     background: url('../assets/restaurant.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     image-rendering: -webkit-optimize-contrast;
 }
 .header {
@@ -30,9 +33,17 @@ body{
  }
 
 .homeContent{
-    height: 100vh;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aboutContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)
 }

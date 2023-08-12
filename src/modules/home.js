@@ -3,6 +3,9 @@ function loadHome(){
     const homeDiv = document.createElement('div')
     homeDiv.classList.add('homeContent')
 
+    const aboutDiv = document.createElement('div')
+    aboutDiv.classList.add('aboutContent')
+
     const restaurantAboutHeader = document.createElement('h4')
     restaurantAboutHeader.textContent = "SUSHIDON IS..."
 
@@ -14,7 +17,8 @@ function loadHome(){
 
     
 
-    homeDiv.append(restaurantAboutHeader, restaurantAbout, orderButton)
+    aboutDiv.append(restaurantAboutHeader, restaurantAbout, orderButton)
+    homeDiv.append(aboutDiv)
     document.getElementById('content').append(homeDiv)
 }
 

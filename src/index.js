@@ -5,6 +5,7 @@ import './styles/home.css'
 
 initialLoad()
 loadHome()
+
 let parent = document.getElementById('content')
 let header = document.querySelector('.header')
 
@@ -14,6 +15,11 @@ document.getElementById('home').addEventListener('click', ()=>{
 })
 
 document.getElementById('menu').addEventListener('click', ()=>{
+    parent.removeChild(header.nextSibling)
+    loadMenu()
+})
+
+document.getElementById('contact').addEventListener('click', ()=>{
     parent.removeChild(header.nextSibling)
     loadMenu()
 })

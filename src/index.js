@@ -1,6 +1,7 @@
 import initialLoad from './modules/pageLoad'
 import loadHome from './modules/home'
 import loadMenu from './modules/menu'
+import loadContact from './modules/contact'
 import './styles/home.css'
 
 initialLoad()
@@ -21,5 +22,5 @@ document.getElementById('menu').addEventListener('click', ()=>{
 
 document.getElementById('contact').addEventListener('click', ()=>{
     parent.removeChild(header.nextSibling)
-    loadMenu()
+    loadContact()
 })

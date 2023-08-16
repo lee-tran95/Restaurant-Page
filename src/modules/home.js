@@ -16,10 +16,21 @@ function loadHome(){
     const orderButton = document.createElement('Button')
     orderButton.textContent = "ORDER NOW"
 
-    
+    const hoursOfOperationDiv = document.createElement('div')
+    hoursOfOperationDiv.classList.add('hoursOfOperation')
 
+    const weekdays = document.createElement('span')
+    weekdays.classList.add('days')
+    weekdays.textContent = "Monday-Thursday:"
+
+    const weekends = document.createElement('span')
+    weekends.classList.add('days')
+    weekends.textContent = "Friday-Saturday:"
+
+    
     aboutDiv.append(restaurantAboutHeader, restaurantAbout, orderButton)
-    homeDiv.append(aboutDiv)
+    hoursOfOperationDiv.append(weekdays, weekends)
+    homeDiv.append(aboutDiv, hoursOfOperationDiv)
     document.getElementById('content').append(homeDiv)
 }
 

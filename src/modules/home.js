@@ -19,18 +19,27 @@ function loadHome(){
     const hoursOfOperationDiv = document.createElement('div')
     hoursOfOperationDiv.classList.add('hoursOfOperation')
 
-    const weekdays = document.createElement('span')
+    const weekdays = document.createElement('p')
     weekdays.classList.add('days')
-    weekdays.textContent = "Monday-Thursday:"
+    weekdays.textContent = "Mondays - Thursdays: "
 
-    const weekends = document.createElement('span')
+    const weekdaysHours = document.createElement('span')
+    weekdaysHours.classList.add('hours')
+    weekdaysHours.textContent = " 8AM - 8PM"
+
+    const weekends = document.createElement('p')
     weekends.classList.add('days')
-    weekends.textContent = "Friday-Saturday:"
+    weekends.textContent = "Friday - Saturday: "
 
-    
+    const weekendsHours = document.createElement('span')
+    weekendsHours.classList.add('hours')
+    weekendsHours.textContent = " 8AM - 8PM"
+
+    weekdays.appendChild(weekdaysHours)
+    weekends.appendChild(weekendsHours)
     aboutDiv.append(restaurantAboutHeader, restaurantAbout, orderButton)
     hoursOfOperationDiv.append(weekdays, weekends)
-    homeDiv.append(aboutDiv, hoursOfOperationDiv)
+    homeDiv.append(hoursOfOperationDiv, aboutDiv, )
     document.getElementById('content').append(homeDiv)
 }
 

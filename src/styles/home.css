@@ -26,20 +26,27 @@ body{
 }
  h4{
     font-size: 2rem;
-    color: white;
+    background: linear-gradient(to right, #ed1250 0%, #fbc99d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
  }
 
  p{
     font-size: 1.2rem;
-    color: white;
+    color: #fbc99d;
     padding: 10px 20px
  }
 
  .days{
-    color: red;
+    color: #ed1250;
+ }
+
+ .hours{
+    color: #fff6da;
  }
 .homeContent{
-    width: 50vw;
+    width: 100vw;
     height: 89vh;
     margin: auto;
     display: flex;
@@ -54,6 +61,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
+    margin-top: auto;
 }
 
 .hoursOfOperation{
@@ -62,4 +70,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
+    margin-top: auto;
+    padding: 25px;
 }

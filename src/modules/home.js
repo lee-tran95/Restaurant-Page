@@ -33,7 +33,7 @@ function loadHome(){
 
     const weekendsHours = document.createElement('span')
     weekendsHours.classList.add('hours')
-    weekendsHours.textContent = " 8AM - 8PM"
+    weekendsHours.textContent = " 8AM -11PM"
 
     weekdays.appendChild(weekdaysHours)
     weekends.appendChild(weekendsHours)

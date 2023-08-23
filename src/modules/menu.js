@@ -6,10 +6,22 @@ function loadMenu(){
     const menuItems = document.createElement('div')
     menuItems.classList.add('menu-items')
     
-    menuItems.appendChild(
+    menuItems.append(
         createMenuItem(
-            "Udon",
-            "Delcious thick noodles in a sauce of your choice"
+            "Miso Udon",
+            "Our Sanuki-Style Udon served in a savory vegan miso broth with fresh bean sprouts, corn, and your choice of ground spicy soy meat or sweet beef."
+        ),
+        createMenuItem(
+            "Nikutama",
+            "Our Sanuki-style Udon served in our Umami-rich (flavor-packed) sauce. Can be enjoyed hot or cold"
+        ),
+        createMenuItem(
+            "Tonkotsu",
+            "Our Sanuki-Style Udon served in our creamy and savory pork broth"
+        ),
+        createMenuItem(
+            "B.K.",
+            "Our Sanuki-style Udon served in our Umami-rich (flavor-packed) sauce. Can be enjoyed hot or cold"
         )
     )
 

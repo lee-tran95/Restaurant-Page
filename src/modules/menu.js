@@ -22,7 +22,23 @@ function loadMenu(){
         createMenuItem(
             "B.K.",
             "Our Sanuki-style Udon served in our Umami-rich (flavor-packed) sauce. Can be enjoyed hot or cold"
-        )
+        ),
+        createMenuItem(
+            "Hawaiian Roll",
+            "California roll with Tuna and Green Onions with Soy Mustard Sauce"
+        ),
+        createMenuItem(
+            "In & Out Shrimp",
+            "Shrimp Tempura Roll with Crabmeat, Avocado, and Cucumber drizzled with Shrimp Cilantro and Eel Sauce"
+        ),
+        createMenuItem(
+            "Rainbow Roll",
+            "California Roll with Assorted Fish and Avocado"
+        ),
+        createMenuItem(
+            "Double Crab",
+            "Softshell Crab, Avocado and Cucumber topped with Spicy Crab and Eel Sauce"
+        ),
     )
 
     menuDiv.append(menuItems)
